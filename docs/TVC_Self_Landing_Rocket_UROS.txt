@@ -1,3 +1,0 @@
-https://github.com/UrosKukovic/TVC_Self_Landing_Rocket
-and
-https://github.com/fdiwth/tvc-drone
