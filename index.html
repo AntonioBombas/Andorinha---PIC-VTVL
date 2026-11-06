@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Andorinha - VTVL</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #2c3e50;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        header {
+            background-color: #0b1c2c;
+            color: #ffffff;
+            padding: 3rem 20px;
+            text-align: center;
+            border-bottom: 4px solid #1abc9c;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+            color: #bdc3c7;
+        }
+        nav {
+            background: #15314b;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 20px;
+        }
+        .section {
+            margin-bottom: 4rem;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+            color: #0b1c2c;
+            margin-top: 0;
+        }
+        .specs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .spec-card {
+            background: #fdfdfd;
+            border-left: 4px solid #0b1c2c;
+            padding: 20px;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .spec-card h3 {
+            margin-top: 0;
+            color: #15314b;
+            font-size: 1.2rem;
+        }
+        .spec-card ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+        .spec-card li {
+            margin-bottom: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 25px 20px;
+            background: #0b1c2c;
+            color: #bdc3c7;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Projeto Andorinha</h1>
+    <p>Projeto Integrador de 1.º Ciclo (PIC) - Foguetão VTVL</p>
+</header>
+
+<nav>
+    <a href="#sobre">Visão Geral</a>
+    <a href="#engenharia">Arquitetura Técnica</a>
+    <a href="#equipa">A Equipa</a>
+</nav>
+
+<div class="container">
+    <section id="sobre" class="section">
+        <h2>Visão Geral do Projeto</h2>
+        <p>O Projeto Andorinha foca-se no desenho, montagem e teste de um veículo com capacidade de descolagem e aterragem vertical (VTVL). O sistema centraliza-se na propulsão elétrica sustentada por um Electric Ducted Fan (EDF), operando em conjunto com um sistema mecânico de Thrust Vector Control (TVC) que atua em dois eixos para garantir a estabilização e a autoridade direcional do veículo em voo.</p>
+    </section>
+
+    <section id="engenharia" class="section">
+        <h2>Arquitetura Técnica e Integração</h2>
+        <div class="specs-grid">
+            <div class="spec-card">
+                <h3>Propulsão e Controlo (TVC)</h3>
+                <ul>
+                    <li>EDF de 70mm</li>
+                    <li>Gimbal TVC de 2 eixos</li>
+                    <li>Atuadores: Servos KST DS215MG</li>
+                    <li>Alimentação: Bateria LiPo 6S</li>
+                </ul>
+            </div>
+            <div class="spec-card">
+                <h3>Eletrónica e Avionics</h3>
+                <ul>
+                    <li>Microcontrolador de Voo: Teensy 4.1</li>
+                    <li>Controlo de Potência: ESC AM32</li>
+                    <li>Telemetria e Aquisição de Dados</li>
+                </ul>
+            </div>
+            <div class="spec-card">
+                <h3>Estrutura e Fabrico</h3>
+                <ul>
+                    <li>Fuselagem leve em fibra de vidro e carbono</li>
+                    <li>Suportes mecânicos desenhados em CAD e impressos em 3D</li>
+                    <li>Testes instrumentados em bancada de ensaios</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipa" class="section">
+        <h2>A Equipa</h2>
+        <p>O desenvolvimento está a ser levado a cabo por um grupo de 9 estudantes de engenharia aeroespacial, divididos em frentes de trabalho rigorosas para assegurar a sinergia entre a eletrónica embarcada, o controlo aerodinâmico e os materiais compósitos.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Projeto Andorinha. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
